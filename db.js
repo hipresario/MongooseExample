@@ -9,4 +9,4 @@ var Comment = new Schema({
  
 mongoose.model( 'Comment', Comment );
  
-mongoose.connect( 'mongodb://10.81.71.50/comment' );
+mongoose.connect( 'mongodb://peewee:adagio098@ds039487.mongolab.com:39487/peewee' );
