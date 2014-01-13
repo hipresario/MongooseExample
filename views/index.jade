@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+  #map-canvas
   div.addCommentForm
         form( method="post", action="/create")
             div
@@ -23,10 +24,5 @@ block content
         br
         div.content= comment.content 
         hr
-        |================================
-   //
-    this is commnet.
-    or not comment
-   div.footer
-     footer here
        
+    
