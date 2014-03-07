@@ -1,6 +1,8 @@
 var mongoose = require( 'mongoose' );
 var Comment = mongoose.model( 'Comment' );
 
+
+
 exports.index = function ( req, res ){
   Comment.find( function ( err, comments, count ){
     res.render( 'index', {
@@ -8,7 +10,7 @@ exports.index = function ( req, res ){
         comments : comments
     });
   });
-}; 
+};
 
 exports.create = function ( req, res ){
   new Comment({
@@ -19,3 +21,4 @@ exports.create = function ( req, res ){
     res.redirect( '/' );
   });
 };
+
